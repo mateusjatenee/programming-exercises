@@ -33,4 +33,4 @@ def solveIt(limit):
 
 result = solveIt(10001)
 
-print(result[10000])
+print(result[len(result) - 1])
