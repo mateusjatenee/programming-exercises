@@ -39,4 +39,4 @@ function solveIt(limit) {
 
 var result = solveIt(10001);
 
-console.log(result[10000]);
+console.log(result[result.length - 1]);
