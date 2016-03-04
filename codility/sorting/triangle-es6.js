@@ -5,7 +5,7 @@ function solution(a) {
 
 	a.sort((a, b) => b - a);
 
-	for(var i = 0; i < length - 2; i++) {
+	for(let i = 0; i < length - 2; i++) {
 		var p = i;
 		var q = i + 1;
 		var r = i + 2;
