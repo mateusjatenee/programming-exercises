@@ -23,6 +23,6 @@ function solution(a) {
 	return 0;
 }
 
-var array = [10, 50, 5, 1];
+var array = [10, 2, 5, 1, 8, 20];
 
 console.log(solution(array));
