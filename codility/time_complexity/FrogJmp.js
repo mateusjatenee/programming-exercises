@@ -27,6 +27,13 @@
 // expected worst-case time complexity is O(1);
 // expected worst-case space complexity is O(1).
 
+// simpler solution:
+
+// function solution(X, Y, D) {
+// 	return Math.ceil((Y - X) / D);
+// }
+
+
 
 function solution(X, Y, D) {
 	// currently = X
