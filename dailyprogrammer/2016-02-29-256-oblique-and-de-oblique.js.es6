@@ -1,6 +1,14 @@
 'use strict';
 
 class Solution {
+
+	convertToArray(input) {
+		let array = input.split('\n');
+		array.forEach((element, index, array) => {
+			array[index] = array[index].split(' ');
+		});
+		return array;
+	}
 	
 	matrix(x) {
 		let res = [];
@@ -12,10 +20,8 @@ class Solution {
 	}
 
 	oblique(input) {
-		let array = input.split('\n');
-		array.forEach((element, index, array) => {
-			array[index] = array[index].split(' ');
-		});
+		let array = this.convertToArray(input);
+
 		let rowSize = array.length;
 		let columnSize = array[0].length;
 		let res = this.matrix(rowSize + columnSize - 1);
