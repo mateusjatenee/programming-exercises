@@ -1,7 +1,9 @@
 function solution(a) {
 	if(a.length == 0) return 0;
 
-	sorted = a.sort();
+	sorted = a.sort(function(a, b) {
+		return a - b;
+	});
 	var last = 0;
 	var sum = 1;
 
