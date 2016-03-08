@@ -3,7 +3,7 @@
 function rotate(a, k) {
 
 	let length = a.length;
-	if(a.length !== 0) {
+	if(length !== 0) {
 		let i = 0;
 		let p;
 		while (i < k) {
