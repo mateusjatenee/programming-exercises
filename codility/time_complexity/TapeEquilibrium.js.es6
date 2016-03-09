@@ -4,11 +4,11 @@ function solution(A) {
 
 	let length = A.length;
 	let head = A[0];
-	let min_diff, tail;
+	let tail = A.reduce((a, b) => a + b) - A[0];
+	let min_diff;
 
 	if(length === 2) return Math.abs(A[0] - A[1]);
 
-	tail = A.reduce((a, b) => a + b) - A[0];
 
 	min_diff = Math.abs(head - tail);
 
