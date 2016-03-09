@@ -4,7 +4,7 @@ function solution(A) {
 
 	let length = A.length;
 	let head = A[0];
-	let min_diff, curr_diff, tail;
+	let min_diff, tail;
 
 	if(length === 2) return Math.abs(A[0] - A[1]);
 
