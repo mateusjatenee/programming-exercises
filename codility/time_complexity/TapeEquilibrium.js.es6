@@ -11,14 +11,12 @@ function solution(A) {
 	tail = A.reduce((a, b) => a + b) - A[0];
 
 	min_diff = Math.abs(head - tail);
-	curr_diff = min_diff;
 
 	for(let i = 1; i < length - 2; i++) {
 		head += A[i];
 		tail -= A[i];
-		curr_diff = Math.abs(head - tail);
-		if(curr_diff < min_diff) {
-			min_diff = curr_diff;
+		if(Math.abs(head - tail) < min_diff) {
+			min_diff = Math.abs(head - tail);
 		}
 	}
 	return min_diff;
