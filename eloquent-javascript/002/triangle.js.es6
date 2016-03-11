@@ -1,10 +1,9 @@
 'use strict';
 
 function triangle(height) {
-	let hashtag = '#';
+	let hashtag = '';
 	for(let i = 0; i < height; i++) {
-		console.log(hashtag);
-		hashtag += '#';
+		console.log(hashtag += '#');
 	}
 }
 
