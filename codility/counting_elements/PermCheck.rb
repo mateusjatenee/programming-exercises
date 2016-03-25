@@ -1,6 +1,5 @@
 def solution(a)
 	a.sort!
-
 	length = a.length
 
 	(1..length).each do |i|
@@ -8,7 +7,6 @@ def solution(a)
 			return 0
 		end
 	end
-
 	return 1
 end
 
