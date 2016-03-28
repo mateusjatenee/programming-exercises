@@ -11,5 +11,3 @@ function sumAllMultiples($limit)
 
     return $sum;
 }
-
-var_dump(sumAllMultiples(1000));
