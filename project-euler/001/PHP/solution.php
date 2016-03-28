@@ -1,6 +1,6 @@
 <?php
 
-function sumAllMultiples($limit)
+function sumAllMultiples(int $limit): int
 {
     $sum = 0;
     foreach (range(0, $limit - 1) as $i) {
