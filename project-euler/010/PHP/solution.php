@@ -1,6 +1,6 @@
 <?php
 
-function isPrime($number)
+function isPrime($number): bool
 {
     if ($number % 2 == 0) {
         return ($number == 2);
@@ -17,7 +17,7 @@ function isPrime($number)
     }
 }
 
-function solveIt($limit = 2e6)
+function solution(int $limit): int
 {
     $sum = 0;
 
@@ -29,5 +29,3 @@ function solveIt($limit = 2e6)
 
     return $sum;
 }
-
-var_dump(solveIt());
