@@ -3,7 +3,7 @@
 function binarySearch($array, $n)
 {
     $min = 0;
-    $max = sizeof($array) - 1;
+    $max = count($array) - 1;
 
     while ($min <= $max) {
         $avg = (int) ($max + $min) / 2;

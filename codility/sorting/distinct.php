@@ -6,7 +6,7 @@ function solution($a)
         return 0;
     }
 
-    $length = sizeof($a);
+    $length = count($a);
 
     sort($a);
 
