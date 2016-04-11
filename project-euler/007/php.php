@@ -14,7 +14,7 @@ class Solution
     public function isPrime($number)
     {
         if ($number % 2 == 0) {
-            return ($number == 2);
+            return $number == 2;
         } else {
             $sqrt = sqrt($number);
 
@@ -33,7 +33,7 @@ class Solution
         $primes = [2];
         $i = 3;
 
-        while (sizeof($primes) < $this->limit) {
+        while (count($primes) < $this->limit) {
             if ($this->isPrime($i)) {
                 array_push($primes, $i);
                 $i++;
@@ -51,4 +51,4 @@ $solution = new Solution(10001);
 
 $result = $solution->solve();
 
-var_dump($result[sizeof($result) - 1]);
+var_dump($result[count($result) - 1]);

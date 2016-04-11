@@ -2,7 +2,6 @@
 
 class Solution
 {
-
     public function __construct($limit)
     {
         $this->limit = $limit;
@@ -14,6 +13,7 @@ class Solution
         for ($i = 0; $i < $this->limit; $i++) {
             $sum += $i ** 2;
         }
+
         return $sum;
     }
 
@@ -23,6 +23,7 @@ class Solution
         for ($i = 0; $i < $this->limit; $i++) {
             $sum += $i;
         }
+
         return $sum ** 2;
     }
 }

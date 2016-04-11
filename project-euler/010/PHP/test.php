@@ -2,9 +2,6 @@
 
 require 'solution.php';
 
-/**
- *
- */
 class TestSolution extends PHPUnit_Framework_TestCase
 {
     public function testSolutionIsCorrect()

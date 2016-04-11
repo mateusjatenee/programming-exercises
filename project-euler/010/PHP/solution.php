@@ -3,7 +3,7 @@
 function isPrime($number): bool
 {
     if ($number % 2 == 0) {
-        return ($number == 2);
+        return $number == 2;
     } else {
         $sqrt = sqrt($number);
 
