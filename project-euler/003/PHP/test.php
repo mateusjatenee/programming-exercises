@@ -2,7 +2,7 @@
 
 include_once 'solution.php';
 
-class Test extends PHPUnit_Framework_TestCase
+class test extends PHPUnit_Framework_TestCase
 {
     public function testPrimeReturnsJustFine()
     {
